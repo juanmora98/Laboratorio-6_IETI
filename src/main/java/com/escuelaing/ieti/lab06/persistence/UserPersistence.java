@@ -23,12 +23,14 @@ public class UserPersistence {
 
     public User getUserById(String userId) {
 
+        User userA = null;
+
         for (User user : users) {
             if( user.getUserId().equals(userId)){
-                return user;
+                userA = user;
             }
         }
-        return null;
+        return userA;
     }
 
     public User createUser(User user) throws Exception {
