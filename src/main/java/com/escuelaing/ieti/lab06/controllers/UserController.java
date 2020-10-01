@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("all")
+    @GetMapping("/all")
     public ResponseEntity<?> getAll() {
         try {
             return new ResponseEntity<>(userService.getAll(), HttpStatus.OK);
