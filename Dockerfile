@@ -5,4 +5,5 @@ EXPOSE 8080
 ARG OUTPUT_FOLDER=build/libs/
 COPY ${OUTPUT_FOLDER} /app/lib
 WORKDIR /app/lib
-ENTRYPOINT ["java","-jar","task-planner-0.0.1-SNAPSHOT.jar"]
+ADD build/libs/lab06-0.0.1-SNAPSHOT.jar lab06.jar
+ENTRYPOINT ["java","-jar","lab06.jar"]
