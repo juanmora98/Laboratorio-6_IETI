@@ -2,9 +2,11 @@ package com.escuelaing.ieti.lab06.services.impl;
 
 import com.escuelaing.ieti.lab06.pojos.User;
 import com.escuelaing.ieti.lab06.services.interfaces.UserService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserServiceImpl implements UserService {
 
 
